@@ -8,8 +8,15 @@
 img{
     width: 100%;
 }
+/*
 body{
     overflow: hidden;
+}
+*/
+section{
+    overflow: hidden;
+    position: relative;
+/*    height: 100vh;*/
 }
 .wrapper{
     width: 100%;
@@ -44,12 +51,13 @@ header{
     justify-content:space-between;
     align-items: center;
     padding-top: 30px;
-    position: relative;
+/*    position: relative;*/
     margin-top: 95px;
     
 }
 .content{
     max-width: 600px;
+    padding-bottom: 69px;
 }
 .content h2{
     font-weight: 500;
@@ -76,39 +84,43 @@ header{
 }
 .header-img-1{
     position: absolute;
-    right: 0;
-    width: 500px;
-    height: 500px;
+    right: 100px;
+    top: 222px;
+    width: 450px;
+    height: 450px;
     object-fit: contain;
     margin-bottom: 45px;
 }
 .header-img-2{
     position: absolute;
-    right: 0;
-    width: 500px;
-    height: 500px;
+    right: 126px;
+    top: 171px;
+    width: 450px;
+    height: 450px;
     object-fit: contain;
     margin-bottom: 45px;
     display: none;
 }
 .header-img-3{
     position: absolute;
-    right: 0;
-    width: 500px;
-    height: 500px;
+    right: 73px;
+    top: 139px;
+    width: 450px;
+    height: 450px;
     object-fit: contain;
     margin-bottom: 45px;
     display: none;
 }
 .circle{
     background: #0b8044;
-    height: 900px;
-    width: 900px;
+    height: 1000px;
+    width: 1000px;
     border-radius: 50%;
     position: absolute;
     right: 0;
     bottom: 0;
     transform: translate(50% , 50%);
+    z-index: -2;
 }
 .images{
     display: flex;
@@ -116,11 +128,16 @@ header{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 20px;
 
 }
 .float-img{
-    width: 40px;
-    margin-right: 30px;
+    margin-right: 10px;
+}
+.img-1 , .img-2 , .img-3{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 .radio{
     display: none;
