@@ -8,15 +8,11 @@
 img{
     width: 100%;
 }
-/*
-body{
-    overflow: hidden;
-}
-*/
+
 section{
     overflow: hidden;
     position: relative;
-/*    height: 100vh;*/
+    height: 100vh;
 }
 .wrapper{
     width: 100%;
@@ -129,6 +125,7 @@ header{
     left: 50%;
     transform: translateX(-50%);
     padding-bottom: 20px;
+    padding-top: 30px;
 
 }
 .float-img{
